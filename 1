@@ -1,0 +1,45 @@
+<ref *1> Context {
+  update: {
+    update_id: 732699659,
+    message: {
+      message_id: 588,
+      from: [Object],
+      chat: [Object],
+      date: 1669266609,
+      reply_to_message: [Object],
+      location: [Object]
+    }
+  },
+  telegram: Telegram {
+    token: '5489930876:AAH_9kr5CKbZePgbS4oU_xVAYFtOfHEdSaQ',
+    response: undefined,
+    options: {
+      apiRoot: 'https://api.telegram.org',
+      apiMode: 'bot',
+      webhookReply: true,
+      agent: [Agent],
+      attachmentAgent: undefined,
+      testEnv: false
+    }
+  },
+  botInfo: {
+    id: 5489930876,
+    is_bot: true,
+    first_name: 'DevX Attendance Checking',
+    username: 'DevX_attendance_bot',
+    can_join_groups: true,
+    can_read_all_group_messages: false,
+    supports_inline_queries: false
+  },
+  state: {},
+  session: { __scenes: { current: 'location', state: {} } },
+  scene: SceneContextScene {
+    ctx: [Circular *1],
+    scenes: Map(2) {
+      'location' => [BaseScene],
+      'weatherNotI' => [WizardScene]
+    },
+    leaving: false,
+    options: { defaultSession: {} }
+  }
+}
